@@ -1,5 +1,3 @@
-# metrics-service
-
 # Assignment description
 collector includes 
 1. Metrics Collection: collector.go

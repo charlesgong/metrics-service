@@ -1,0 +1,29 @@
+version: "2"
+
+services:
+  prometheus:
+    image: prom/prometheus:v2.45.3
+    container_name: prometheus
+    network_mode: metrics
+    ports:
+      - "9090:9090"
+    volumes:
+      - "${PROJECT_PATH}/prometheus.yml:/etc/prometheus/prometheus.yml"
+      
+  grafana:
+    image: grafana/grafana:10.2.4
+    container_name: grafana
+    network_mode: metrics
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+  
+  pushgateway:
+    image: prom/pushgateway:v1.9.0
+    container_name: prom-pushgateway
+    network_mode: metrics
+    ports: 
+      - "9091:9091"
+    depends_on:
+      - prometheus
