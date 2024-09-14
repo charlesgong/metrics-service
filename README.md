@@ -5,7 +5,7 @@ collector includes
 1. Metrics Collection: collector.go
 2. Data Storage: pusher.go (still wondering about this part, best practise might expose metrics and wait Prometheus to pull, if we want to save to Prometheus we need to push)
 3. API Endpoint: main.go 
-4. ~~alert~~ is in [here](github.com/charlesgong/alert-service) 
+4. ~~alert~~ is in [here](https://github.com/charlesgong/alert-service) 
 5. Visualization: import docs/grafana_sample.json to a Grafana, docs/grafana-screenshot.png is the sample grafana dashboard's screenshot at Sep 15 2024 10:34 a.m. UTC+13
 6. Documentation: contains most of the instruction to setup the project
 
