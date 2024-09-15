@@ -37,7 +37,7 @@ Start the server to collect the metrics.
 
 and check the metrics by using follow URL,
 
-```http:\\localhost:9101\metrics```
+```http://localhost:9101/metrics```
 
 you can find the metrics begin as **go_metrics_***
 
