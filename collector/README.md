@@ -3,9 +3,8 @@ collector includes
 1. Metrics Collection: collector.go
 2. Data Storage: pusher.go (still wondering about this part, best practise might expose metrics and wait Prometheus to pull, if we want to save to Prometheus we need to push)
 3. API Endpoint: main.go 
-!Not 4. alert
-5. Visualization: import docs/grafana_sample.json to a Grafana, docs/grafana-screenshot.png is the sample grafana dashboard's screenshot at Sep 15 2024 10:34 a.m. UTC+13
-6. Documentation: contains most of the instruction to setup the project
+4. Visualization: import docs/grafana_sample.json to a Grafana, docs/grafana-screenshot.png is the sample grafana dashboard's screenshot at Sep 15 2024 10:34 a.m. UTC+13
+5. Documentation: contains most of the instruction to setup the project
 
 
 
@@ -35,9 +34,7 @@ Start the server to collect the metrics.
 
 and check the metrics by using follow URL,
 
-```http:\\localhost:9101\metrics```
-
-you can find the metrics begin as **go_metrics_***
+```http://localhost:9101/metrics```
 
 ## Step Two
 
