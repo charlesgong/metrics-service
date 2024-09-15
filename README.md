@@ -39,8 +39,6 @@ and check the metrics by using follow URL,
 
 ```http://localhost:9101/metrics```
 
-you can find the metrics begin as **go_metrics_***
-
 ## Step Two
 
 Server metrics need to be collected and visualized to analyze the data. Prometheus and Grafana need to be started and configured along with Docker.
